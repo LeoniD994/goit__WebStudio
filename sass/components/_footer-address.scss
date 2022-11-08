@@ -1,0 +1,16 @@
+.footer-address {
+    text-align: start;
+}
+.footer-address__web {
+    color: $accentcolor;
+}
+.footer-address__logo {
+    font-family: $secondarytupe;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    color: $color;
+    text-decoration: none;
+    display: inline-block;
+}

@@ -1,0 +1,26 @@
+@import './utils/variables.scss';
+@import './components/body';
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+@import'./components/container';
+@import'./components/page-header';
+@import './components/main-nav';
+@import './components/site';
+@import './components/hero';
+@import './components/features';
+@import './components/work';
+@import './components/team';
+@import './components/client';
+@import './components/portfolio';
+@import './components/footer';
+@import './components/address';
+@import './components/f';
+@import './components/footer-address';
+@import './components/footer-form';
+@import './components/backdrop';
+@import './components/modal';
+@import './components/form__field';
+

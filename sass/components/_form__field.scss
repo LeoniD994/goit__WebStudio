@@ -1,0 +1,102 @@
+.form__field{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    justify-content: center;
+    margin-bottom: 10px;
+ }
+ .form__field--check {
+     margin-bottom: 30px;
+ }
+ .form__icon {
+     position: absolute;
+     top: 11px;
+     ;
+     left: 12px;
+     width: 18px;
+     height: 18px;
+     fill: $secondarycolorblack;
+     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+     .form__span:hover &,
+     .form__span:focus-within & {
+         fill: $accentcolor;
+     }
+ }
+ .form__input {
+     margin: 0;
+     padding: 10px 42px;
+     border: 1px solid rgba(33, 33, 33, 0.2);
+     border-radius: 4px;
+     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     width: 100%;
+
+     &:hover,
+     &:focus {
+         border: 1px solid $accentcolor;
+     }
+ }
+ .form__label {
+     margin-bottom: 4px;
+     font-size: 12px;
+     line-height: 1.1;
+     color: $secondarycolor;
+ }
+ .form__span {
+     position: relative;
+ }
+ .form__textarea {
+     border: 1px solid rgba(33, 33, 33, 0.2);
+     border-radius: 4px;
+     font-size: 12px;
+     line-height: 14px;
+     letter-spacing: 0.01em;
+     padding: 16px 12px;
+     color: rgba(33, 33, 33, 1);
+     resize: none;
+ }
+ .form__custom-check {
+     display: inline-block;
+     width: 16px;
+     height: 16px;
+     margin: 0;
+     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     content: "";
+     border: 2px solid $secondarycolorblack;
+     border-radius: 4px;
+ }
+ .form__contract {
+     margin-left: 3px;
+     color: $accentcolor;
+ }
+ .form__checkbox {
+     appearance: none;
+
+     &:checked+.form__custom-check {
+         border-color: $accentcolor;
+         background-color: $accentcolor;
+         background-image: url(../images/icon-check1.svg);
+     }
+ }
+ .form__btn-send {
+     display: block;
+     cursor: pointer;
+     font-family: 'Roboto';
+     font-style: normal;
+     font-weight: 700;
+     font-size: 16px;
+     line-height: 1.8;
+     background: $accentcolor;
+     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+     border-radius: 4px;
+     color: $color;
+     border: none;
+     padding: 10px 52px;
+     margin-left: auto;
+     margin-right: auto;
+ }
+  .form__label--size{
+    font-size: 16px;
+    font-weight: 1.7;
+  }

@@ -1,0 +1,16 @@
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.main-nav__web {
+    color: $accentcolor;
+}
+.main-nav__logo {
+    font-family: $secondarytupe;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    color: $colorblack;
+    text-decoration: none;
+}

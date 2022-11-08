@@ -1,0 +1,20 @@
+.footer {
+    background-color: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+}
+.footer-link__footer-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: $color;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    fill: $color;
+}
+.footer-link {
+    margin-left: 70px;
+    text-align: start;
+}
