@@ -5,6 +5,11 @@ ul {
     margin: 0;
     padding: 0;
 }
+img{
+ 
+    max-width: 100%;
+    height: auto;
+}
 @import'./components/container';
 @import'./components/page-header';
 @import './components/main-nav';
@@ -23,4 +28,5 @@ ul {
 @import './components/backdrop';
 @import './components/modal';
 @import './components/form__field';
+@import './components/mobile-menu';
 

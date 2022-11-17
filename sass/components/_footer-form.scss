@@ -1,35 +1,74 @@
 .footer-form {
-    margin-left: 93px;
+    @media screen and (min-width:768px) {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+       
+    }
+   
+    @media screen and (min-width:1200px) {
+            margin-left: 93px;
+        }
+
 }
 .footer-form__p {
     margin: 0;
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.1;
     text-transform: uppercase;
     margin-bottom: 20px;
     color: $color;
+    @media screen and (max-width:1200px) {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+      }
+         
+  
 }
 .footer-form__input {
     padding: 16px 15px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     background-color: #2F303A;
     border-radius: 4px;
-    width: 358px;
+    width: 450px;
     color: $color;
+    margin-bottom: 20px;
+    display: block;
+            margin-left: auto;
+            margin-right: auto;
+    @media screen and (min-width:768px) {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+    
+        }
+  
+    @media screen and (min-width:1200px) {
+        width: 358px;
+    }
 }
 .footer-form__icon {
     width: 24px;
     height: 24px;
     fill: $color;
-    margin-left: 10px;
+    margin-left: 12px;
+    @media screen and (min-width:1140px) {
+        margin-left: 10px;
+        }
 }
 .footer-form__form {
-    display: flex;
-    justify-content: baseline;
+ 
+    @media screen and (min-width:1200px) {
+        display: flex;
+        justify-content: baseline;
+        }
+
 }
 .footer-form__btn {
-    display: flex;
+    
+    display: block;
     padding: 10px 28px;
     color: $color;
     cursor: pointer;
@@ -40,7 +79,19 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 1.8;
-    text-align: center;
-    justify-content: center;
-    margin-left: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    @media screen and (min-width:768px) {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+           
+        }
+                 @media screen and (min-width:1200px) {
+                     display: flex;
+                     text-align: center;
+                     justify-content: center;
+                     margin-left: 12px;
+                 }
 }

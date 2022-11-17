@@ -2,7 +2,24 @@
     background-color: #2F303A;
     padding-top: 60px;
     padding-bottom: 60px;
-    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    min-width:480px;
+    width: 100%;
+
+    @media screen and (min-width:768px) {
+        display: flex;
+       justify-content: center;
+       align-items: center;
+        min-width: 768px;
+        width: 100%;
+        
+        @media screen and (min-width:1200px) {
+            width: 100%;
+           max-width: 1600px;
+        }
+    }
+   
 }
 .footer-link__footer-title {
     margin-top: 0;
@@ -13,8 +30,29 @@
     font-size: 14px;
     line-height: 1.1;
     fill: $color;
+    @media screen and (max-width:767px) {
+        display: block;
+        text-align: center;
+    }
 }
 .footer-link {
-    margin-left: 70px;
-    text-align: start;
+display: block;
+margin-bottom: 60px;
+   
+    
+        @media screen and (min-width:768px) {
+            text-align: start;
+            
+        }
+}
+.footer__inline{
+    @media screen and (min-width:768px ) {
+        display: flex;
+            justify-content: space-around;
+            text-align: center;
+            margin-bottom: 60px;
+    }
+    
+    
+    
 }

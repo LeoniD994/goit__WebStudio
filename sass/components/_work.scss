@@ -1,5 +1,10 @@
 .work {
+    
+    display: none;
+    @media screen  and (min-width:1140px) { 
     padding-bottom: 94px;
+    display: flex;
+    }
 }
 .work__ul {
     display: block;

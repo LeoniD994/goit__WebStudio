@@ -13,36 +13,93 @@
 </head>
 <body class="body">
    
-     <header class="page-header">
-         <div class="container main-nav">
-            <nav  class="main-nav">
-        <a href="./index.html" class="main-nav__logo"><span class="main-nav__web">Web</span>Studio</a>
-        <ul class="site">
-            <li><a href="./index.html" class="site__nav current">Студія</a></li>
-            <li><a href="./portfolio.html" class="site__nav">Портфоліо</a></li>
-            <li><a href="#" class="site__nav">Контакти</a></li>
-        </ul>
-        </nav>
-        <ul class="site site__cont">
-            <li class="site__cont">
-            <a href="info@devstudio.com" class="site__contacts">
-            <svg class="site__icon">
-            <use href="./images/icons.svg#icon-envelope"></use>
-           </svg> 
-           info@devstudio.com</a>
-            </li>
-            <li class="site__cont">
-           <a href="tel:+380961111111" class="site__contacts">
-            <svg class="site__icon">
-            <use href="./images/icons.svg#icon-telefon"></use>
-           </svg>
-           +380961111111</a>
+    <header class="page-header">
+        <div class="container main-nav">
+           <nav  class="main-nav">
+       <a href="./index.html" class="main-nav__logo"><span class="main-nav__web">Web</span>Studio</a>
+       <ul class="site">
+           <li><a href="./index.html" class="site__nav current">Студія</a></li>
+           <li><a href="./portfolio.html" class="site__nav">Портфоліо</a></li>
+           <li><a href="#" class="site__nav">Контакти</a></li>
+       </ul>
+       </nav>
+       <ul class="site site__cont">
+           <li class="site__cont">
+           <a href="info@devstudio.com" class="site__contacts">
+           <svg class="site__icon">
+           <use href="./images/icons.svg#icon-envelope"></use>
+          </svg> 
+          info@devstudio.com</a>
            </li>
-        
-        </ul>
-       </div>
-    </header>
-   
+           <li class="site__cont">
+          <a href="tel:+380961111111" class="site__contacts">
+           <svg class="site__icon">
+           <use href="./images/icons.svg#icon-telefon"></use>
+          </svg>
+          +380961111111</a>
+          </li>
+       
+       </ul>
+      </div>
+       <div class="header-mobile">
+       <a href="./index.html" class="main-nav__logo"><span class="main-nav__web">Web</span>Studio</a>
+           <button
+              class="menu-toggle js-open-menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+           >
+           <svg 
+           width="40px" 
+           height="40px"
+           aria-label="Перемикач мобільного меню"
+           >
+               <use class="icon-menu" href="./images/icons.svg#icon-menu_40px" ></use>
+           </svg>
+           </button>
+       
+      </div>
+  
+        <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+       <svg
+         width="40"
+         height="40"
+       >
+       <use class="icon-close" href="./images/icons.svg#icon-close"></use>
+       </svg>
+       </button>
+
+      <div class="mobile-menu">
+       <ul class="mobile-menu__navi">
+           <li><a href="./index.html" class="mobile_menu__li current">Студія</a></li>
+           <li><a href="./portfolio.html" class="mobile_menu__li">Портфоліо</a></li>
+           <li><a href="#" class="mobile_menu__li">Контакти</a></li>
+       </ul>
+       
+       <ul class="mobile-menu__cont">
+           <li class="mobile-menu__link-cont">
+           <a href="info@devstudio.com" class="mobile-menu__site">
+           info@devstudio.com</a></li>
+           <li class="">
+          <a href="tel:+380961111111" class="modile-menu__tel">+380961111111</a>
+          </li>
+       
+       </ul>
+       <ul class="mobile-menu__social">
+           <li class="mobile-menu__network"><a href="" class="mobile-menu__link">Instagram</a></li>
+           <li class="mobile-menu__line">|</li>
+           <li class="mobile-menu__network"><a href="" class="mobile-menu__link">Twitter</a></li>
+           <li class="mobile-menu__line">|</li>
+           <li class="mobile-menu__network"><a href="" class="mobile-menu__link">Facebook</a></li>
+           <li class="mobile-menu__line">|</li>
+           <li class="mobile-menu__network"><a href="" class="mobile-menu__link">LinkedIn</a></li>
+       </ul>
+       
+     
+   </div>
+      
+      </div>
+   </header>
   
     <main>
      
@@ -422,6 +479,7 @@
 </form>
 </div>
 </div>
+<script defer src="./js/mobile-menu.js"></script>
 <script src="./js/modal.js"></script>
 </body>
 </html>
