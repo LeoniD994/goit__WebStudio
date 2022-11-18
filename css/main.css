@@ -778,8 +778,14 @@ img {
 }
 
 .portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .portfolio__work {
@@ -812,7 +818,7 @@ img {
   color: #FFFFFF;
   top: 0;
   bottom: 0;
-  padding: 24px 63px;
+  padding: 24px 77px;
   margin: 0;
   background-color: rgba(33, 150, 243, 0.9);
   -webkit-transition-property: -webkit-transform;
@@ -826,6 +832,19 @@ img {
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
   overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+  .portfolio__over-text {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 49px;
+    padding-bottom: 77px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__over-text {
+    padding: 24px 63px;
+  }
 }
 .portfolio__link:hover .portfolio__over-text {
   -webkit-transform: translateY(0);
@@ -854,6 +873,21 @@ img {
       flex-wrap: wrap;
   gap: 30px;
 }
+@media screen and (max-width: 767px) {
+  .portolio__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 35px;
+  }
+}
 
 .portfolio__link {
   display: block;
@@ -878,9 +912,36 @@ img {
   margin-bottom: 34px;
   gap: 8px;
 }
+@media screen and (max-width: 767px) {
+  .portfolio__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    gap: 8px;
+    width: 330px;
+  }
+}
 
 .portfolio__card {
-  width: 370px;
+  width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio__card {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__card {
+    width: 370px;
+  }
 }
 
 .portfolio__btn {
