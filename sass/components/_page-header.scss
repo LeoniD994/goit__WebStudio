@@ -8,6 +8,7 @@
     border: 1px solid #ECECEC;
     top: 0;
     background-color: $color;
+    z-index: 2;
     
     @media  screen and (min-width:768px) {
         min-height: 80px;
