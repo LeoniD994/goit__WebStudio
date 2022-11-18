@@ -47,6 +47,7 @@
   
     @media screen and (min-width:1200px) {
         width: 358px;
+        margin-bottom:0;
     }
 }
 .footer-form__icon {
@@ -54,7 +55,7 @@
     height: 24px;
     fill: $color;
     margin-left: 12px;
-    @media screen and (min-width:1140px) {
+    @media screen and (min-width:1200px) {
         margin-left: 10px;
         }
 }
