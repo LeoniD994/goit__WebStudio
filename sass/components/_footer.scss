@@ -6,6 +6,7 @@
     margin-right: auto;
     min-width:480px;
     width: 100%;
+    
 
     @media screen and (min-width:768px) {
         display: flex;
@@ -37,7 +38,7 @@
 }
 .footer-link {
 display: block;
-margin-bottom: 60px;
+
    
     
         @media screen and (min-width:768px) {
@@ -46,13 +47,27 @@ margin-bottom: 60px;
         }
 }
 .footer__inline{
+    // display: flex;
+    // flex-direction: column;
+    // gap:60px;
+    margin-bottom: 60px;
     @media screen and (min-width:768px ) {
         display: flex;
             justify-content: space-around;
             text-align: center;
             margin-bottom: 60px;
     }
+         @media screen and (min-width:1200px) {
+            margin-bottom: 0px;
+        
+         }
     
     
     
+}
+.footer-address{
+            margin-bottom: 60px;
+    @media screen and (min-width:768px) {
+            margin-bottom: 0px;
+        }
 }

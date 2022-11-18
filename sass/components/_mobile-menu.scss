@@ -31,44 +31,31 @@
     display: flex;
     flex-direction: column;
     gap:32px;
+    margin-bottom: auto;
     
 }
 .mobile-menu__link-cont{
   
 }
 .mobile-menu__cont {
-   position: absolute;
     display: flex;
     flex-direction: column-reverse;
     gap:32px;
-    left: 40px;
-    bottom: 134px;
-   
+    margin-bottom: 64px;
+  
  
 
 }
-.mobile-menu__tel{
 
-}
-.mobile-menu__site{
-    
-}
 .mobile-menu__social{
-    position: absolute;
-    left:40px;
-    bottom:48px;
+    
     display: inline-flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     gap: 10px;
     
 }
-.mobile-menu__line{
-    color: rgba(33, 33, 33, 0.2);
-   font-size: 22px;
-   
-        
-}
+
 .mobile-menu__link{
     font-weight: 500;
         font-size: 18px;
@@ -77,6 +64,13 @@
         letter-spacing: 0.02em;
         color: #2196F3;
       
+}
+.mobile-menu__network::after{
+    content: '';
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transform: rotate(90deg);
+    margin-left: 10px;
+   
 }
 .mobile_menu__li {
     
@@ -172,5 +166,6 @@
     list-style: none;
     display: flex;
     flex-direction: column;
+    height: 100%;
     
 }

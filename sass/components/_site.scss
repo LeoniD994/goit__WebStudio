@@ -1,11 +1,14 @@
 .site {
     @media screen and (min-width:768px) {
     display: flex;
-        margin-left: 90px;}
+        margin-left: 90px;
+        gap:50px;
+    
+    }
 }
 .site__nav {
     @media screen and (min-width:768px) {
-    margin-right: 50px;
+    // margin-right: 50px;
     padding-top: 32px;
     padding-bottom: 32px;
     font-weight: 500;
@@ -72,14 +75,11 @@ font-weight: 500;
                 color: $accentcolor;
             }
           
-           @media screen and (min-width:1200px) {
-            margin-bottom: 0;
-           }
+           
         }
     @media screen and (min-width:1200px) {
        
-    // padding-top: 32px;
-    // padding-bottom: 32px;
+   
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1;
@@ -95,14 +95,11 @@ font-weight: 500;
 }
 .site__cont  {
     @media screen and (min-width:768px) {
-         margin-left: auto;
+       
          display: flex;
          flex-direction: column;
-         margin-bottom: 10px;
-    
-            &:last-child {
-                margin-bottom: 0;
-            }
+         gap:10px;
+         
         }
    
     @media screen and (min-width:1200px) {

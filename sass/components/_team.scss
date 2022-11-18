@@ -2,9 +2,7 @@
     padding-top: 94px;
     padding-bottom: 94px;
     background-color:$secondarywite;
-    // @media screen and (max-width:767px) {
-    //     width: 480px;
-    // }
+  
 }
 .team-soc {
     margin-top: 16px;
@@ -49,12 +47,15 @@
     margin-top: 0;
     margin-bottom: 0;
     background-color: $secondarywite;
+    display: flex;
+        flex-direction: column;
+        gap: 30px;
+    
     @media screen and (min-width:768px) {
         display: flex;
-        justify-content: center;
-      
+        flex-direction: row;
         flex-wrap: wrap;
-        gap:10px;
+        gap:30px;
         
     }
    
@@ -79,26 +80,15 @@
 .team-list__li {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    
     background-color: #ffffff;
     text-align: center;
     width: 450px;
     margin-left: auto;
     margin-right: auto;
-    @media  screen and (max-width:767px) {
-        margin-bottom: 30px;
-        
-            &:last-child {
-                margin-bottom: 0;
-            }
-    }
-   
+  
   
         @media screen and (min-width:768px) {
-            display: block;
-            flex-wrap: wrap;
-            gap: 30px;
-            width: 354px;
+           width: 354px;
         }
         @media screen  and (min-width:1200px) {
             width: 270px;
@@ -107,7 +97,6 @@
 }
 .team__title {
     margin-top: 0;
-    margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.1;
