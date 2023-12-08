@@ -992,7 +992,6 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    min-width: 768px;
     width: 100%;
   }
 }
@@ -1013,10 +1012,32 @@ img {
   line-height: 1.1;
   fill: #FFFFFF;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 767px) {
   .footer-link__footer-title {
     display: block;
     text-align: center;
+  }
+}
+
+.footer__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 50px;
+  text-align: center;
+}
+@media screen and (min-width: 767px) {
+  .footer__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
   }
 }
 
@@ -1030,7 +1051,13 @@ img {
 }
 
 .footer__inline {
-  margin-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 @media screen and (min-width: 768px) {
   .footer__inline {
@@ -1046,6 +1073,10 @@ img {
 @media screen and (min-width: 1200px) {
   .footer__inline {
     margin-bottom: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 122px;
   }
 }
 
@@ -1114,17 +1145,15 @@ img {
   text-decoration: none;
 }
 
-@media screen and (min-width: 1200px) {
-  .f {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
-  }
+.footer-address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-
 @media screen and (min-width: 1200px) {
   .footer-address {
     text-align: start;
@@ -1165,16 +1194,19 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
+.footer-form {
+  margin-left: 93px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 555px;
+}
+@media screen and (max-width: 768px) {
   .footer-form {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .footer-form {
-    margin-left: 93px;
+    margin: 0 auto;
   }
 }
 
@@ -1204,7 +1236,7 @@ img {
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: #2F303A;
   border-radius: 4px;
-  width: 450px;
+  max-width: 450px;
   color: #FFFFFF;
   margin-bottom: 20px;
   display: block;

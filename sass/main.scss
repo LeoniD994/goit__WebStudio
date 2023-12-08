@@ -6,11 +6,11 @@ ul {
     padding: 0;
 }
 img{
- 
     max-width: 100%;
     height: auto;
     z-index: 1;
 }
+
 @import'./components/container';
 @import'./components/page-header';
 @import './components/main-nav';
@@ -23,7 +23,6 @@ img{
 @import './components/portfolio';
 @import './components/footer';
 @import './components/address';
-@import './components/f';
 @import './components/footer-address';
 @import './components/footer-form';
 @import './components/backdrop';

@@ -18,7 +18,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link rel="stylesheet" href="./css/main.min.css" />
     <link
     rel="stylesheet"
@@ -29,13 +32,13 @@
     <header class="page-header">
       <div class="container main-nav">
         <nav class="main-nav">
-          <a href="./index.html" class="main-nav__logo"
-            ><span class="main-nav__web">Web</span>Studio</a
-          >
+          <a href="./index.html" class="main-nav__logo">
+            <span class="main-nav__web">Web</span>Studio
+          </a>
           <ul class="site">
             <li><a href="./index.html" class="site__nav current animate__wobble">Студія</a></li>
             <li><a href="./portfolio.html" class="site__nav animate__wobble">Портфоліо</a></li>
-            <li><a href="#" class="site__nav">Контакти</a></li>
+            <li><a href="./contacts.html" class="site__nav">Контакти</a></li>
           </ul>
         </nav>
         <ul class="site__cont">
@@ -51,9 +54,7 @@
             <a href="tel:+380961111111" class="site__contacts">
               <svg class="site__icon">
                 <use href="./images/icons.svg#icon-telefon"></use>
-              </svg>
-              +380961111111</a
-            >
+              </svg>+380961111111</a>
           </li>
         </ul>
       </div>
@@ -157,7 +158,7 @@
       <section class="work">
         <div class="container">
           <h2 class="work__head">Чим ми займаємося</h2>
-          <ul class="work__ul">
+          <ul class="work__ul animated animate__backInUp">
             <li class="work__card">
               <img src="./images/box1.jpg" alt="робота за комп'ютером" width="370" />
               <p class="work__name">Десктопні додатки</p>
@@ -470,7 +471,7 @@
     </main>
 
     <footer class="footer">
-      <div class="container f">
+      <div class="container footer__inner">
         <div class="footer__inline">
           <div class="footer-address">
             <a href="./index.html" class="footer-address__logo"
@@ -576,16 +577,14 @@
             <span class="form__span">
               <input type="tel" name="tel" id="tel" class="form__input" />
               <svg class="form__icon">
-                <use href="./images/icons.svg#icon-phone-black"></use></svg
-            ></span>
+                <use href="./images/icons.svg#icon-phone-black"></use></svg></span>
           </div>
           <div class="form__field">
             <label for="email" class="form__label">Пошта</label>
             <span class="form__span">
               <input type="email" name="email" id="email" placeholder="" class="form__input" />
               <svg class="form__icon">
-                <use href="./images/icons.svg#icon-icon-email"></use></svg
-            ></span>
+                <use href="./images/icons.svg#icon-icon-email"></use></svg></span>
           </div>
 
           <div class="form__field">

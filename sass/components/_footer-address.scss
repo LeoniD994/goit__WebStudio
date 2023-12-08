@@ -1,5 +1,7 @@
 .footer-address {
-
+    display: flex;
+    flex-direction: column;
+    
 
     @media screen and (min-width:1200px) {
         text-align: start;
