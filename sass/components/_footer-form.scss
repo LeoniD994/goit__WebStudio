@@ -4,7 +4,7 @@
     flex-wrap: wrap;
     max-width: 555px;
 
-    @media screen and (max-width:768px) {
+    @media screen and (min-width:768px) {
         display: block;
         margin:0 auto;
 
@@ -18,7 +18,7 @@
     text-transform: uppercase;
     margin-bottom: 20px;
     color: $color;
-    @media screen and (max-width:1199px) {
+    @media screen and (min-width:1199px) {
         display: flex;
         text-align: center;
         justify-content: center;
@@ -39,10 +39,10 @@
             display: block;
             margin-left: auto;
             margin-right: auto;
+            width: 358px;
         }
 
     @media screen and (min-width:1200px) {
-        width: 358px;
         margin-bottom:0;
     }
 }
